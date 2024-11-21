@@ -70,5 +70,5 @@ public:
 */
 
 
-// Approach I tried pushing the new element, then sort the array then find the index of third element
+// Approach I tried pushing the new element, then sort the array then find the index of pushed element
 // Although code was running fine but its complex.

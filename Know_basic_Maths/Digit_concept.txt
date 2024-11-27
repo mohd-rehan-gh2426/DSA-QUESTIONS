@@ -1,0 +1,26 @@
+Suppose I have Number (N) = 7789, and I want to do the extraction of it's digits.
+
+what is the meaning of extraction of digits?
+
+extraction of digits means that we want every digit of our Number (N) separately.
+
+so what we can do is :-
+
+7789 % 10 = 9 ------> first digit
+7789 / 10 = 778 -----> Number update
+
+778 % 10 = 8 -------> second digit
+778 / 10 = 77 -------> number update
+
+77 % 10 = 7 -------> third digit
+77 / 10 = 7 --------> number update
+
+7 % 10 = 7 ----------> fourth digit
+7 / 10 = 0 ----------> number update
+
+so we can write it's pseudo code like this :-
+
+while (N>0){
+    last_digit = N % 10;
+    N = N /10;
+}

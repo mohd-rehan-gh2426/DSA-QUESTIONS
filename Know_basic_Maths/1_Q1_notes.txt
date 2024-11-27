@@ -1,0 +1,37 @@
+Suppose if I want count the digits of number so remember,
+
+methods of counting the digits :-
+
+            first method is :-
+
+"The number of times a number is divisible by 10 is the number of digits of that number."
+
+int count_digits(int num){
+
+    int count = 0;
+
+    while (num > 0){
+        count = count + 1;
+        num = num / 10;
+    }
+
+    return count;
+}
+
+
+And the second method is :---
+
+by taking log10 of number,
+
+ if we do log10(7789),
+
+ it will give 3.89 something.
+ and if I add 1 to it will become 4.89
+ and if take integer of it it will give us 4.
+
+ so what can we do is 
+
+ int count_digits(int num){
+    int count = (int) log10(num) + 1;
+    return count;
+ }
